@@ -49,10 +49,9 @@ The trick to this one is to read the title of the challenge: _Where Robots Canno
 
 One Google search later:
 
-<img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/9b69979d-8f7b-45bf-95f7-120a17f8c4cb" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/9b69979d-8f7b-45bf-95f7-120a17f8c4cb" />
 
-
-<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/07c3c62e-b78d-438b-9eec-2aa8906e593a" /> <img width="500" height="180" alt="image" src="https://github.com/user-attachments/assets/ecc4d434-998d-4096-982c-0e755a54bcb8" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/07c3c62e-b78d-438b-9eec-2aa8906e593a" /><img width="500" height="180" alt="image" src="https://github.com/user-attachments/assets/ecc4d434-998d-4096-982c-0e755a54bcb8" />
 
 Our flag: brunner{r0bot5_sh0u1d_nOt_637_h3re_b0t_You_g07_h3re}
 
@@ -169,7 +168,7 @@ Change the false to true and we get:
 
 flag: brunner{C00k135_4R3_p0W3rFu1_4nD_D3l1c10u5!}
 
-# The Baking Case
+# The Baking Case (40)
 
 ```
 Author: H4N5
@@ -210,7 +209,7 @@ output & conversion:
 
 flag: brunner{I_like_Baking_More_That_Programming}
 
-# Online Cake Flavour Shop
+# Online Cake Flavour Shop (40)
 
 ```
 Author: olexmeister
@@ -230,3 +229,93 @@ Luckily in the the provided Python code we can see a very simple vulnerability. 
 
 flag: brunner{wh0_kn3w_int3g3rs_c0uld_m4k3_y0u_rich}
 
+# Whisk (40)
+
+```
+Author: rvsms
+
+Someone tried sabotaging our operation by "whisking” away the secret ingredient for the perfect brunsviger.
+All that's left on the workbench is this sticky note full of pastry-themed symbols and random letters.
+
+Can you help us recover the secret ingredient?
+```
+
+Here is the text we are given. 
+
+```
+DR🥐 C🥐TZ🥐D 🧁SXZ🥐A🧁🥐SD 🧁C 🍰KE🍰FC K🍩M🥐. D🍩 O🍰Q🥐 🍰 Y🥐ZP🥐TD
+OZ🥖SCM🧁X🥐Z, H🥐KD O🥖DD🥐Z E🧁DR OZ🍩ES C🥖X🍰Z, Y🍩🥖Z 🧁D 🍩M🥐Z DR🥐 E🍰ZH
+A🍩🥖XR, 🍰SA K🥐D DR🥐 CFZ🥖Y C🥐🥐Y 🧁SD🍩 🥐M🥐ZF T🍩ZS🥐Z. D🍰CD🥐, CH🧁K🥐,
+🍰SA Z🥐H🥐HO🥐Z: CR🍰Z🧁SX Y🍰CDZF N🍩F 🧁C H🍰SA🍰D🍩ZF.
+OZ🥖SS🥐Z{S0_H0Z3_K🥖HYF_T1YR3Z}
+```
+
+A substitution cipher. We know that "OZ🥖SS🥐Z" in the last line is brunner. So replace O with b, Z with r, and so on. Until the entire ingrediant is decrypted. 
+
+<img width="600" height="175" alt="image" src="https://github.com/user-attachments/assets/0c0c16f3-a70b-4beb-94a5-6e5304baf9ea" />
+flag: brunner{n0_m0r3_lumpy_c1h3r}
+
+
+# Based Brunner (40)
+
+```
+Author: Nissen
+
+Brunsviger is just so based, I think I could eat it in any form - from binary to decimal!
+
+Tip: This might require a bit of programming, I would recommend looking into the int() function in Python.
+```
+In this challenge we are given an encoded text file and the way it was encoded via a python file.
+
+encode.py:
+```
+def encode_char(ch: str, base: int) -> str:
+    """
+    Encode a single character into a string of digits in the given base
+    """
+    value = ord(ch)
+    digits = []
+    while value > 0:
+        digits.append(str(value % base))
+        value //= base
+
+    return "".join(reversed(digits))
+
+
+with open("flag.txt") as f:
+    text = f.read().strip()
+
+# Encode the text with all bases from decimal to binary
+for base in range(10, 1, -1):
+    text = " ".join(encode_char(ch, base) for ch in text)
+
+with open("based.txt", "w") as f:
+    f.write(text)
+
+```
+
+As said in the tip, it requires so programming. I think we should let the CS student do this explaining. PLEASE CHECK HIS GITHUB OUT!!!: 
+
+Code:
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/ccd51bde-a848-43b0-ab31-27e76ad84092" />
+
+flag: brunner{1s_b4s3d}
+
+# Caffeine (50)
+
+```
+Author: Quack
+This new coffee shop recently opened and you've been waiting too long for your daily caffeine injection!
+Can you find a way to see a little more than just your order status?
+```
+
+Here is the website we are given.
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/e35b0a53-1720-413b-a0d6-0e7dcc14c11a" />
+
+We can add orders and also search for orders through order ID. The vulnerability in the website is through the order ID we can execute code. In order to get the flag we need to get a reverse shell or some other remote code execution (RCE) on the server. 
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/34dacbd5-482b-4f32-a3e4-cc6996f80213" /> <img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/53868499-892e-40c6-8e8c-4aa6c25230f4" />
+
+### There a second part of this CTF which involves getting root access later.
+
+# 
