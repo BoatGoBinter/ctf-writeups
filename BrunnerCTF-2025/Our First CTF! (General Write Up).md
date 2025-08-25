@@ -375,7 +375,7 @@ Here is the bridge:
 
 The strategy was simple. Go through Denmark's waterways and find bridges. What I didn't expect was to find it in the first try. 
 
-<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/89be6c1d-1054-4aec-b860-20902b35019a" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/89be6c1d-1054-4aec-b860-20902b35019a" />
 
 The reasoning behind choosing this location is likely based off a few things, but I'd likely attribute it to Geoguessing on Geoguessr.
 My initial thought was that it can't be a river but rather a much larger body of water. The bridge has to be straight unlike the one south of it. And it should be in a more rural but still inner Denmark with land on both sides. That's how I landed on this bridge first try.
@@ -396,11 +396,11 @@ So if the operator you have found is DSB, the model number RB1, and the maximum 
 
 We are given an mp4 of a train moving. One frame in the video was enough to give away very important details.
 
-<img width="689" height="535" alt="image" src="https://github.com/user-attachments/assets/dda47475-5940-46ab-af5b-7a5f0790db9c" />
+<img width="500" height="450" alt="image" src="https://github.com/user-attachments/assets/dda47475-5940-46ab-af5b-7a5f0790db9c" />
 
 On the train it says "SJ", A Swedish train company. And on wikipedia we can find the train, the X2000.
 
-<img width="300" height="150" alt="image" src="https://github.com/user-attachments/assets/7baf7b59-7748-4947-8afa-048c7fef6151" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7baf7b59-7748-4947-8afa-048c7fef6151" />
 
 Another search shows 200km/hr. 
 
