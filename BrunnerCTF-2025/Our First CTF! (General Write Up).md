@@ -295,6 +295,7 @@ with open("based.txt", "w") as f:
 ```
 
 As said in the tip, it requires so programming. I think we should let the CS student do this explaining. PLEASE CHECK HIS GITHUB OUT!!!: 
+https://github.com/billpark1234/ctf-writeup/blob/main/20250824-BrunnerCTF/based-brunner.md
 
 Code:
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/ccd51bde-a848-43b0-ab31-27e76ad84092" />
