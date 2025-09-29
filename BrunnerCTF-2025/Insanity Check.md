@@ -31,4 +31,4 @@ console.log(decoded);
 ```
 Output: brunner{y0u_d1d_1t!!!_n0w_try_t0_4ctu4lly_pl4y_th3_ctf}
 
-Alternatively,  Eat the brunners!!! 1337 of them and feel your sanity drop!!!!!!
+Alternatively,  Eat 1337 of the deserts in the background.
