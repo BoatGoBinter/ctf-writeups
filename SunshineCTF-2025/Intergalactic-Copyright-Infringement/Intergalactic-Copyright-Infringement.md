@@ -16,6 +16,6 @@ I made the script here: #insert later
 
 From there we get the PDF file, and also the flag!
 
-<img width="1597" height="1029" alt="image" src="https://github.com/user-attachments/assets/a2e879d0-5927-4dc3-bcb2-0f52b4a3afed" />
+<img width="1549" height="1105" alt="image" src="https://github.com/user-attachments/assets/ff61f0da-fe0f-4b05-83b0-cdbe23d0fb45" />
 
 I'll write a more detailed explanation of the code at a later point. But right now I'm working on GIS stuff.
