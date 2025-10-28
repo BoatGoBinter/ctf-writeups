@@ -12,10 +12,13 @@ In evidence.pcapng, lets find a packet from the BitTorrent protocol that has a h
 
 Now we have the stream. Let's run a script to extract the contents.
 
-I made the script here: #insert later
+I made the script here: 
+https://github.com/BoteGoesBinted/ctf-writeups/blob/main/SunshineCTF-2025/Intergalactic-Copyright-Infringement/reconstruct.py
 
 From there we get the PDF file, and also the flag!
 
 <img width="1549" height="1105" alt="image" src="https://github.com/user-attachments/assets/ff61f0da-fe0f-4b05-83b0-cdbe23d0fb45" />
+
+flag: sun{4rggg_sp4c3_p1r4cy} 
 
 I'll write a more detailed explanation of the code at a later point. But right now I'm working on GIS stuff.
