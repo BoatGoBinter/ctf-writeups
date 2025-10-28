@@ -1,6 +1,11 @@
 # Intergalactic Copyright Infringement
 ```
-NASA received a notification from their ISP that it appeared that some copyrighted files were transferred to and from the ISS (Guess astronauts need movies too). We weren't able to recover the all of the files, but we were able to capture some traffic from the final download before the user signed off. If you can help recover the file that was downloaded perhaps you can shed some light on what they were doing?
+NASA received a notification from their ISP that it appeared
+that some copyrighted files were transferred to and from the
+ISS (Guess astronauts need movies too).
+We weren't able to recover the all of the files,
+but we were able to capture some traffic from the final download before the user signed off.
+If you can help recover the file that was downloaded perhaps you can shed some light on what they were doing?
 ```
 
 We are given a pcapng file with traffic from and to BitTorrent. What we need to do is to recover the file that was downloaded. To do that let's go through the dumps.
